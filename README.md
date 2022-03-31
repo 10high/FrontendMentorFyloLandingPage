@@ -4,7 +4,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Link to Live Page
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Fylo Landing Page](https://10high.github.io/FrontendMentorFyloLandingPage/)
 
 ## My process
 
