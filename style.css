@@ -1,0 +1,885 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End CSS Reset*/
+
+:root {
+	/*Primary colors */
+	--veryDarkBlue: hsl(243, 87%, 12%);
+	--desaturatedBlue: hsl(238, 22%, 44%);
+	/*accent colors */
+	--brightBlue: hsl(224, 93%, 58%);
+	--moderateCyan: hsl(170, 45%, 43%);
+	/*neutral colors */
+	--lightGrayishBlue: hsl(240, 75%, 98%);
+	--lightGray: hsl(0, 0%, 75%);
+
+	/*Headings, Call-to-actions, Header Navigation */
+	--raleway: 'Raleway', sans-serif;
+	/*Body */
+	--openSans: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+
+/* Mobile first */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+	font-family: var(--openSans);
+	font-weight: 400;
+}
+
+.sr-only {
+	position: absolute;
+	margin: -1px;
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.wrapper { /* Wraps Whole Page */
+	max-width: 70rem; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Navigation Bar */
+.navtop { /*wraps whole navigation bar */
+	width: 86.67%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2.4em;
+}
+
+.navtop img { /*Fylo Logo image */
+	height: 2.4rem;
+	width: 7.9rem;
+}
+
+.navtop nav { /* sets width of navigation links wrapper */
+	flex-basis: 166px;
+}
+
+
+.navtop ul { /*Styles the navigation links */
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	font-family: var(--raleway);
+	font-weight: 400;
+}
+
+.navtop a {
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	max-width: 100%;
+}
+
+/* First Card */
+.card1 { /*Wraps whole of Card 1 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 9.7rem;
+	text-align: center;
+}
+
+.card1 img { /*Card's Splash image */
+	width: 30.5rem;
+}
+
+.card1 h2 {
+	font-family: var(--openSans);
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-top: 3.9rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.card1 p {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 2.53rem;
+	margin-left: 3.3rem;
+	margin-right: 4rem;
+}
+
+.card1 form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3.2rem;
+	margin-left: 0.5rem;
+}
+
+.card1 input {
+	height: 3.6rem;
+	width: 29.8rem;
+	border-radius: 0.3rem;
+	border-style: solid;
+	margin-left: 0.3rem;
+	border-width: 1px;
+	border-top-color: var(--lightGray);
+	font-family: var(--raleway);
+}
+
+.card1 input::placeholder {
+	padding-left: 1.8rem;
+	color: var(--lightGray);
+	font-size: 1.24rem;
+}
+
+.card1 button {
+	margin-top: 1.6rem;
+	height: 4rem;
+	width: 30.5rem;
+	border-radius: 0.3rem;
+	margin-right: 0.5rem;
+	font-weight: 700;
+	background-color: var(--brightBlue);
+	box-shadow: 2px 2px 4px 0px #BFBFBF;
+	color: white;
+	font-size: 1.4rem;
+	border-style: none;
+	transition: background-color 0.25s ease-in-out;
+}
+
+.card1 button:hover {
+	background-color: hsl(224, 91%, 70%);
+	cursor: pointer;
+}
+
+/*Card 2 */
+.card2 { /*Wraps whole of card 2 */
+	display: flex;
+	flex-direction: column;
+	margin-top: 9rem;
+	}
+
+.card2 .bg-wave { /* Background wave image crowning card 2 splash image */
+	width: 100%;
+	height: 5rem;
+	background-image: url(images/bg-curve-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100% 5rem;
+}
+
+.card2 .bg-color { /*Wraps all of Card 2 EXCEPT Wave image at the top*/
+	background-color: var(--lightGrayishBlue);
+	padding-bottom: 8.1rem;
+}
+
+.card2 .splashimage { /*Card 2 splash image */
+	padding-top: 4.2rem;
+	display: block;
+	width: 32rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card2 h3 {
+	font-family: var(--raleway);
+	font-size: 1.62rem;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 9.2rem;
+}
+
+.body1, .body2  { 
+	font-size: 1.4rem;
+	text-align: left;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-left: 2rem;
+	margin-right: 3rem;
+}
+
+.bg-color .body1 { /*First card paragaraph */ 
+	margin-top: 2.7rem;
+}
+
+.bg-color .body2 { /*Second card paragrph */
+	margin-top: 1.6rem;
+}
+
+.card2 .linkwrapper { /*Wrapper for positioning "See Fylo Work" link */
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.card2 .linkwrapper a {
+	font-size: 1.2rem;
+	font-stretch: ultra-expanded;
+	text-decoration: none;
+	padding-bottom: 0.8rem;
+	border-bottom: 1px solid  hsl(170, 45%, 43%);
+	color: hsl(170, 45%, 43%);
+	transition: color 0.25s ease-in-out;
+	transition: border-bottom-color 0.25s ease-in-out;
+}
+
+.card2 .linkwrapper a:hover {
+	color: hsl(170, 97%, 15%);
+	border-bottom-color: hsl(170, 97%, 15%);
+}
+
+.card2 .linkwrapper img {
+	position: relative;
+	bottom: -0.5rem;
+	right: -0.3rem;	
+}
+
+.card2 article { /*Wraps whole of Testimonial section */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonialwrapper { /*Wraps all content in testimonial*/
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 12px 2px #e7e7e7;
+	margin-top: 4rem;
+	width: 28.1rem;
+	padding-top: 2rem;
+	padding-bottom: 2.2rem;
+	
+}
+
+.testimonialwrapper-img { /*The quoatation mark image in testimonial */
+	width: 1rem;
+	height: 1.24rem;
+	margin-left: 2.8rem;
+}
+
+.testimonialwrapper p {
+	font-size: 1.05rem;
+	font-weight: 400;
+	margin-left: 2.7rem;
+	margin-right: 1.5rem;
+	margin-top: 0.7rem;
+	text-align: left;
+	letter-spacing: 0.13px;
+	line-height: 1.72;	
+}
+
+.referencewrapper { /*Wraps the profile image and name of testimonial author */
+	height: 2.4rem;
+	display: flex;
+	margin-top: 1.2rem;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-left: 2.7rem;
+}
+
+.referencewrapper-img { /*Profil image of testimonial author */
+	height: 100%;
+	border-radius: 50%;
+}
+
+
+.referencewrapper ul { /* Name and job title of testimonial author */
+	height: 2.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 0.75rem;
+}
+
+.referencewrapper ul :first-child { /*Name only */
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.referencewrapper ul :last-child { /*Job title only */
+	font-weight: 400;
+	font-size: 0.65rem;
+}
+
+/*Card 3 */
+.card3 { /*Wraps all of card 3 */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--desaturatedBlue);
+	padding-bottom: 7.1rem;
+}
+
+.card3 h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: white;
+	margin-top: 5.65rem;
+	margin-left: 4rem;
+	margin-right: 4.6rem;
+	text-align: center;
+}
+
+.card3 p {
+	font-size: 1.4rem;
+	color: white;
+	text-align: center;
+	margin-left: 3.4rem;
+	margin-right: 5.6rem;
+	margin-top: 2rem;
+	line-height: 1.5;
+}
+
+.card3 form {
+	display: flex;
+	flex-direction: column;
+	margin-right: 0.3rem;
+	margin-top: 2rem;
+}
+
+.card3 input {
+	margin-top: 0.35rem;
+	height: 3rem;
+	width: 23.6rem;
+	border-radius: 0.2rem;
+	border-style: none;
+}
+
+.card3 input::placeholder {
+	padding-left: 0.6rem;
+	color: var(--lightGray);
+	font-size: 1rem;
+	transform: translate(0, -1px);
+}
+
+.card3 button {
+	margin-top: 0.8rem;
+	height: 3.2rem;
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 0.1rem;
+	padding-top: 0.3rem;
+	border-style: none;
+	background-color: var(--brightBlue);
+	box-shadow: 1px 1px 1px 0px hsl(224, 66%, 43%);
+	color: white;
+	transition: background-color 0.25s ease-in-out;
+}
+
+.card3 button:hover {
+	background-color: hsl(224, 91%, 70%);
+	cursor: pointer;
+}
+
+footer { /*Wraps all of footer section */
+	width: 100%;
+	font-size: 1.6rem;
+	color: white;
+	background-color: var(--veryDarkBlue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 4.8rem;
+}
+
+.footerwrapper { /*Wraps all content in footer section */
+	width: 29.6rem;
+	margin-top: 6.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.footerlogo { /*Fylo logo */
+	width: 17.5rem;
+	filter: brightness(0) saturate(100%) invert(100%); /* Inverts the original color of the image to match the design */
+}
+
+address { /*Wraps email and telephone info */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 3.9rem;
+	margin-left: 0.2rem;
+	height: 5.8rem;
+}
+
+
+
+address :first-child { /*Telephone only */
+	display: flex;
+	gap: 2rem;
+	align-items: flex-end;
+}
+
+address :last-child { /*Email only */
+	display: flex;
+	gap: 1.8rem;
+	align-items: flex-end;
+}
+
+.navfooter { /* Wraps footer navigation links */
+	margin-top: 6.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 27.7rem;
+}
+
+.navfooter a {
+	text-decoration: none;
+	color: white;
+}
+
+.navfooter a:hover {
+	color: hsl(224, 91%, 70%);
+}
+
+.navfooter :first-child { /*First column of navigation links */
+	display: flex;
+	flex-direction: column;
+	gap: 2.2rem;
+}
+
+.navfooter :last-child { /*Second Column of navigation links */
+	display: flex;
+	flex-direction: column;
+	gap: 2.2rem;
+}
+
+.socials { /*Wraps all social media icons */
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 102px;
+	height: 26px;
+	margin-top: 53px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: white;
+}
+
+.socials a:hover {
+	color: hsl(224, 91%, 70%);
+}
+
+.socials i {
+	border-style: solid;
+	border-radius: 50%;
+	border-width: 1px;	
+}
+
+.fa-facebook-f {
+	font-size: 1.3rem;
+	padding-left: 0.9rem;
+	padding-right: 0.9rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+}
+
+.fa-twitter {
+	font-size: 1.3rem;
+	padding: 0.7rem;
+}
+
+.fa-instagram {
+	font-size: 1.4rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+}
+
+/*Desktop Design */
+@media(min-width: 1120px) {
+
+	.wrapper { /* Wraps whole page */
+		max-width: 144rem;
+	}
+
+	.navtop { /* Wraps whole navigation bar and Fylo logo */
+		margin-top: 6.5rem;
+		width: 88.89%;
+	}
+
+	.navtop img { /* Fylo Logo */
+		height: 3.75%;
+		width: 12.89%;
+	}
+	
+	.navtop nav { /*Sets width of navigation links only */
+		flex-basis: 272px;
+	}
+	
+	.navtop ul { /*Navigation Links */
+		font-size: 1.6rem;
+	}
+
+	.card1 { /* Wraps whole of Card 1 */
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "content image";
+		margin-left: 8rem;
+		margin-right: 8rem;
+		margin-top: 8.6rem;
+	}
+
+	.card1 img { /* Card1 Splash image */
+		grid-area: image;
+		width: 100%;
+	}
+
+	.card1-maincontent { /*Wraps all of Card 1 content EXCEPT Splash image */
+		grid-area: content;
+		text-align: left;
+		align-self: flex-start;
+	}
+
+	.card1 h2 {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 7.75rem;
+		font-size: 4.025rem;
+		font-family: var(--raleway);
+	}
+
+	.card1 p {
+		margin-left: 0;
+		margin-right: 4rem;
+		margin-top: 1.5rem;
+		font-size: 1.81rem;
+		line-height: 1.33;
+	}
+
+	.card1 form {
+		flex-direction: row;
+		margin-left: 0;
+		margin-top: 2.44rem;
+	}
+
+	.card1 input {
+		margin-left: 0;
+		height: 4rem;
+		width: 31.5rem;
+	}
+
+	.card1 button {
+		margin-top: 0;
+		margin-left: 1.5rem;
+		width: 20rem;
+		height: 4.4rem;
+	}
+
+	/*Card 2 */
+	.card2 {
+		margin-top: 16.5rem;
+		background-color: var(--lightGrayishBlue); /* The background fill works differently in the Desktop version because of poor planning on my part - plus I worked out a better way to do it than I used in the mobile version */
+		padding-bottom: 11.15rem; /* Background color bottom padding is handled here */
+	}
+
+	.card2 .bg-wave { /* Background wave image crowning Card background color */
+		width: 100%;
+		height: 11rem;
+		background-image: url(images/bg-curve-desktop.svg);
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: 100% 11rem;
+		background-color: white;
+	}
+
+	.bg-color { /* Wraps all card 2 content */
+		display: grid;
+		grid-template-columns: 1.15fr 0.85fr;
+		grid-template-areas: "content image";
+		background-color: transparent !important;
+		margin-left: 8rem;
+		margin-right: 8rem;
+		padding-bottom: 0 !important;
+	}
+
+	.card2 .splashimage {
+		grid-area: image;
+		display: inline;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 3.2rem;
+		align-self: center;
+	}
+
+	.card2-maincontent {
+		grid-area: content;
+	}
+
+	.card2-maincontent h3 {
+		text-align: left;
+		margin-top: 7.1rem;
+		font-size: 4.05rem;
+	}
+
+	.body1, .body2 {
+		margin-left: 0;
+		margin-right: 20rem;
+		font-size: 1.6rem;
+	}
+
+	.body1 {
+		margin-top: 4.1rem !important;
+	}
+
+	.body2 {
+		margin-top: 7rem;
+	}
+
+	.card2 .linkwrapper { /* Wraps the "See How Fylo Works link and image */
+		justify-content: flex-start;
+		height: 4.2rem;
+	}
+
+	.card2 .linkwrapper a {
+		font-size: 1.6rem;
+	}
+
+	.card2 .linkwrapper img {
+		bottom: -0.5rem;	
+	}
+
+	.card2 article { /* Wraps whole of testimonial section */
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.testimonialwrapper { /*Wraps all of actual testimoninal content */
+		width: 35.5rem;
+		margin-top: 4.5rem;
+	}
+
+	.testimonialwrapper-img { /* Image is the double quotes at top */
+		width: 1.6rem;
+		height: 1.8rem;
+		margin-left: 3.3rem;
+		margin-top: 0.5rem;
+	}
+	
+	.testimonialwrapper p {
+		font-size: 1.3rem;
+		margin-left: 3.3rem;
+		margin-right: 3.3rem;
+		margin-top: 0.8rem;
+		letter-spacing: 0.5px;
+		line-height: 1.75;	
+	}
+	
+	.referencewrapper { /*Wraps testimoninal author profile pic and name and job title */
+		height: 3.23rem;
+		margin-top: 1.4rem;
+		margin-left: 3.3rem;
+	}
+	
+	.referencewrapper ul { /* Testimonial author name and job title */
+		height: 2.65rem;
+		justify-content: space-between;
+		margin-left: 0.78rem;
+	}
+	
+	.referencewrapper ul :first-child { /*Testominal author name */
+		font-size: 1.2rem;
+	}
+	
+	.referencewrapper ul :last-child { /*Testimonial job title */
+		font-size: 0.87rem;
+		margin-bottom: 0;
+	}
+
+	/*Card 3 */
+	.card3 { /*Wraps all of card 3 */
+		display: grid;
+		grid-template-columns: 1.165fr 0.835fr;
+		grid-template-areas: "content form";
+		padding-bottom: 8.65rem;
+	}
+	
+	.card3-maincontent { /*Wraps card 3 actual content EXCLUDES Splash image */
+		grid-area: content;
+		margin-left: 8rem;
+		margin-top: 10.85rem;
+	}
+
+	.card3 h3 {
+		font-size: 3.23rem;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left;
+	}
+	
+	.card3 p {
+		font-size: 1.71rem;
+		text-align: left;
+		margin-left: 0;
+		margin-right: 23rem;
+		margin-top: 2.33rem;
+		line-height: 1.4;
+	}
+	
+	.card3 form {
+		grid-area: form;
+		align-self: flex-start;
+		margin-right: 0;
+		margin-top: 11.2rem;
+		margin-left: 0.2rem;
+	}
+	
+	.card3 input {
+		margin-top: 0;
+		height: 4.6rem;
+		width: 47.6rem;
+	}
+
+	.card3 input::placeholder {
+		padding-left: 2rem;
+		font-size: 1.2rem;
+	}
+	
+	.card3 button {
+		margin-top: 1.6rem;
+		height: 4.8rem;
+		width: 20rem;
+		font-size: 1.4rem;
+	}
+	
+	/*Footer */
+	footer { /*Wraps whole footer section */
+		font-size: 1.6rem;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding-bottom: 7.6rem;
+	}
+	
+	.footerwrapper { /*Wraps all of actual footer content */
+		width: 100%;
+		margin-top: 10.75rem;
+		margin-left: 8rem;
+		margin-right: 0;
+		flex-direction: row;
+	}
+
+	.footeraddress { /*Wraps Fyloe logo and phone and email info */
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		width: 32.58%;		
+	}
+	
+	.footerlogo { /*Fylo logo image */
+		width: 17.5rem;
+	}
+
+	address { /* Wraps only Phone and Email info */
+		justify-content: space-between;
+		align-content: flex-start;
+		margin-top: 2.6rem;
+		margin-left: 0.1rem;
+	}
+	
+	.navfooter { /* Wraps all Nav links */
+		width: 25.9%;
+		margin-top: 7.8rem;
+		flex-direction: row;
+		justify-content: space-between;
+		height: initial;
+	}
+	
+	.socials { /*Wraps all Socials icons */
+		width: 22.2%;
+		align-self: flex-start;
+		justify-content: flex-end;
+		margin-top: 81px;
+	}
+
+	.fa-facebook-f {
+		margin-right: 16px;
+	}
+	
+	.fa-twitter {
+		margin-right: 12px;
+	}
+}
+
+
+
+
