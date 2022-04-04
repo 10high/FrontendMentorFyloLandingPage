@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -67,19 +154,19 @@ table {
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    
+	box-sizing: border-box;
+	font-size: 62.5%;
+
 }
 
 
 /* Mobile first */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
 	font-family: var(--openSans);
 	font-weight: 400;
 }
@@ -94,8 +181,9 @@ body {
 	white-space: nowrap;
 }
 
-.wrapper { /* Wraps Whole Page */
-	max-width: 70rem; 
+.wrapper {
+	/* Wraps Whole Page */
+	max-width: 70rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -103,7 +191,8 @@ body {
 }
 
 /* Navigation Bar */
-.navtop { /*wraps whole navigation bar */
+.navtop {
+	/*wraps whole navigation bar */
 	width: 86.67%;
 	display: flex;
 	justify-content: space-between;
@@ -111,17 +200,20 @@ body {
 	margin-top: 2.4em;
 }
 
-.navtop img { /*Fylo Logo image */
+.navtop img {
+	/*Fylo Logo image */
 	height: 2.4rem;
 	width: 7.9rem;
 }
 
-.navtop nav { /* sets width of navigation links wrapper */
+.navtop nav {
+	/* sets width of navigation links wrapper */
 	flex-basis: 166px;
 }
 
 
-.navtop ul { /*Styles the navigation links */
+.navtop ul {
+	/*Styles the navigation links */
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.2rem;
@@ -139,7 +231,8 @@ main {
 }
 
 /* First Card */
-.card1 { /*Wraps whole of Card 1 */
+.card1 {
+	/*Wraps whole of Card 1 */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -147,7 +240,8 @@ main {
 	text-align: center;
 }
 
-.card1 img { /*Card's Splash image */
+.card1 img {
+	/*Card's Splash image */
 	width: 30.5rem;
 }
 
@@ -216,13 +310,15 @@ main {
 }
 
 /*Card 2 */
-.card2 { /*Wraps whole of card 2 */
+.card2 {
+	/*Wraps whole of card 2 */
 	display: flex;
 	flex-direction: column;
 	margin-top: 9rem;
-	}
+}
 
-.card2 .bg-wave { /* Background wave image crowning card 2 splash image */
+.card2 .bg-wave {
+	/* Background wave image crowning card 2 splash image */
 	width: 100%;
 	height: 5rem;
 	background-image: url(images/bg-curve-mobile.svg);
@@ -231,12 +327,14 @@ main {
 	background-size: 100% 5rem;
 }
 
-.card2 .bg-color { /*Wraps all of Card 2 EXCEPT Wave image at the top*/
+.card2 .bg-color {
+	/*Wraps all of Card 2 EXCEPT Wave image at the top*/
 	background-color: var(--lightGrayishBlue);
 	padding-bottom: 8.1rem;
 }
 
-.card2 .splashimage { /*Card 2 splash image */
+.card2 .splashimage {
+	/*Card 2 splash image */
 	padding-top: 4.2rem;
 	display: block;
 	width: 32rem;
@@ -252,7 +350,8 @@ main {
 	margin-top: 9.2rem;
 }
 
-.body1, .body2  { 
+.body1,
+.body2 {
 	font-size: 1.4rem;
 	text-align: left;
 	font-weight: 400;
@@ -261,15 +360,18 @@ main {
 	margin-right: 3rem;
 }
 
-.bg-color .body1 { /*First card paragaraph */ 
+.bg-color .body1 {
+	/*First card paragaraph */
 	margin-top: 2.7rem;
 }
 
-.bg-color .body2 { /*Second card paragrph */
+.bg-color .body2 {
+	/*Second card paragrph */
 	margin-top: 1.6rem;
 }
 
-.card2 .linkwrapper { /*Wrapper for positioning "See Fylo Work" link */
+.card2 .linkwrapper {
+	/*Wrapper for positioning "See Fylo Work" link */
 	width: 100%;
 	height: 6rem;
 	display: flex;
@@ -282,7 +384,7 @@ main {
 	font-stretch: ultra-expanded;
 	text-decoration: none;
 	padding-bottom: 0.8rem;
-	border-bottom: 1px solid  hsl(170, 45%, 43%);
+	border-bottom: 1px solid hsl(170, 45%, 43%);
 	color: hsl(170, 45%, 43%);
 	transition: color 0.25s ease-in-out;
 	transition: border-bottom-color 0.25s ease-in-out;
@@ -296,16 +398,18 @@ main {
 .card2 .linkwrapper img {
 	position: relative;
 	bottom: -0.5rem;
-	right: -0.3rem;	
+	right: -0.3rem;
 }
 
-.card2 article { /*Wraps whole of Testimonial section */
+.card2 article {
+	/*Wraps whole of Testimonial section */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.testimonialwrapper { /*Wraps all content in testimonial*/
+.testimonialwrapper {
+	/*Wraps all content in testimonial*/
 	display: flex;
 	flex-direction: column;
 	background-color: white;
@@ -315,10 +419,11 @@ main {
 	width: 28.1rem;
 	padding-top: 2rem;
 	padding-bottom: 2.2rem;
-	
+
 }
 
-.testimonialwrapper-img { /*The quoatation mark image in testimonial */
+.testimonialwrapper-img {
+	/*The quoatation mark image in testimonial */
 	width: 1rem;
 	height: 1.24rem;
 	margin-left: 2.8rem;
@@ -332,10 +437,11 @@ main {
 	margin-top: 0.7rem;
 	text-align: left;
 	letter-spacing: 0.13px;
-	line-height: 1.72;	
+	line-height: 1.72;
 }
 
-.referencewrapper { /*Wraps the profile image and name of testimonial author */
+.referencewrapper {
+	/*Wraps the profile image and name of testimonial author */
 	height: 2.4rem;
 	display: flex;
 	margin-top: 1.2rem;
@@ -344,13 +450,15 @@ main {
 	margin-left: 2.7rem;
 }
 
-.referencewrapper-img { /*Profil image of testimonial author */
+.referencewrapper-img {
+	/*Profil image of testimonial author */
 	height: 100%;
 	border-radius: 50%;
 }
 
 
-.referencewrapper ul { /* Name and job title of testimonial author */
+.referencewrapper ul {
+	/* Name and job title of testimonial author */
 	height: 2.1rem;
 	display: flex;
 	flex-direction: column;
@@ -358,18 +466,21 @@ main {
 	margin-left: 0.75rem;
 }
 
-.referencewrapper ul :first-child { /*Name only */
+.referencewrapper ul :first-child {
+	/*Name only */
 	font-weight: 700;
 	font-size: 1rem;
 }
 
-.referencewrapper ul :last-child { /*Job title only */
+.referencewrapper ul :last-child {
+	/*Job title only */
 	font-weight: 400;
 	font-size: 0.65rem;
 }
 
 /*Card 3 */
-.card3 { /*Wraps all of card 3 */
+.card3 {
+	/*Wraps all of card 3 */
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -441,7 +552,8 @@ main {
 	cursor: pointer;
 }
 
-footer { /*Wraps all of footer section */
+footer {
+	/*Wraps all of footer section */
 	width: 100%;
 	font-size: 1.6rem;
 	color: white;
@@ -452,7 +564,8 @@ footer { /*Wraps all of footer section */
 	padding-bottom: 4.8rem;
 }
 
-.footerwrapper { /*Wraps all content in footer section */
+.footerwrapper {
+	/*Wraps all content in footer section */
 	width: 29.6rem;
 	margin-top: 6.5rem;
 	margin-left: auto;
@@ -461,12 +574,15 @@ footer { /*Wraps all of footer section */
 	flex-direction: column;
 }
 
-.footerlogo { /*Fylo logo */
+.footerlogo {
+	/*Fylo logo */
 	width: 17.5rem;
-	filter: brightness(0) saturate(100%) invert(100%); /* Inverts the original color of the image to match the design */
+	filter: brightness(0) saturate(100%) invert(100%);
+	/* Inverts the original color of the image to match the design */
 }
 
-address { /*Wraps email and telephone info */
+address {
+	/*Wraps email and telephone info */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -477,19 +593,22 @@ address { /*Wraps email and telephone info */
 
 
 
-address :first-child { /*Telephone only */
+address :first-child {
+	/*Telephone only */
 	display: flex;
 	gap: 2rem;
 	align-items: flex-end;
 }
 
-address :last-child { /*Email only */
+address :last-child {
+	/*Email only */
 	display: flex;
 	gap: 1.8rem;
 	align-items: flex-end;
 }
 
-.navfooter { /* Wraps footer navigation links */
+.navfooter {
+	/* Wraps footer navigation links */
 	margin-top: 6.25rem;
 	display: flex;
 	flex-direction: column;
@@ -506,19 +625,22 @@ address :last-child { /*Email only */
 	color: hsl(224, 91%, 70%);
 }
 
-.navfooter :first-child { /*First column of navigation links */
+.navfooter :first-child {
+	/*First column of navigation links */
 	display: flex;
 	flex-direction: column;
 	gap: 2.2rem;
 }
 
-.navfooter :last-child { /*Second Column of navigation links */
+.navfooter :last-child {
+	/*Second Column of navigation links */
 	display: flex;
 	flex-direction: column;
 	gap: 2.2rem;
 }
 
-.socials { /*Wraps all social media icons */
+.socials {
+	/*Wraps all social media icons */
 	align-self: center;
 	display: flex;
 	justify-content: space-between;
@@ -528,68 +650,77 @@ address :last-child { /*Email only */
 	margin-top: 53px;
 }
 
-.socials a {
-	text-decoration: none;
-	color: white;
+.facebook-link:hover .facebook-icon {
+	fill: hsl(224, 91%, 70%);
+	border-color: hsl(224, 91%, 70%);
 }
 
-.socials a:hover {
-	color: hsl(224, 91%, 70%);
+.twitter-link:hover .twitter-icon {
+	fill: hsl(224, 91%, 70%);
+	border-color: hsl(224, 91%, 70%);
 }
 
-.socials i {
+.instagram-link:hover .instagram-icon {
+	fill: hsl(224, 91%, 70%);
+	border-color: hsl(224, 91%, 70%);
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
 	border-style: solid;
+	border-width: 1px;
 	border-radius: 50%;
-	border-width: 1px;	
+	border-color: white;
+	fill: white;
 }
 
-.fa-facebook-f {
-	font-size: 1.3rem;
-	padding-left: 0.9rem;
-	padding-right: 0.9rem;
-	padding-top: 0.7rem;
-	padding-bottom: 0.7rem;
-}
-
-.fa-twitter {
-	font-size: 1.3rem;
+.facebook-icon,
+.twitter-icon {
+	width: 1.5rem;
+	height: 1.5rem;
 	padding: 0.7rem;
 }
 
-.fa-instagram {
-	font-size: 1.4rem;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	padding-top: 0.7rem;
-	padding-bottom: 0.7rem;
+.instagram-icon {
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: 0.65rem;
 }
+
 
 /*Desktop Design */
 @media(min-width: 1120px) {
 
-	.wrapper { /* Wraps whole page */
+	.wrapper {
+		/* Wraps whole page */
 		max-width: 144rem;
 	}
 
-	.navtop { /* Wraps whole navigation bar and Fylo logo */
+	.navtop {
+		/* Wraps whole navigation bar and Fylo logo */
 		margin-top: 6.5rem;
 		width: 88.89%;
 	}
 
-	.navtop img { /* Fylo Logo */
+	.navtop img {
+		/* Fylo Logo */
 		height: 3.75%;
 		width: 12.89%;
 	}
-	
-	.navtop nav { /*Sets width of navigation links only */
+
+	.navtop nav {
+		/*Sets width of navigation links only */
 		flex-basis: 272px;
 	}
-	
-	.navtop ul { /*Navigation Links */
+
+	.navtop ul {
+		/*Navigation Links */
 		font-size: 1.6rem;
 	}
 
-	.card1 { /* Wraps whole of Card 1 */
+	.card1 {
+		/* Wraps whole of Card 1 */
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "content image";
@@ -598,12 +729,14 @@ address :last-child { /*Email only */
 		margin-top: 8.6rem;
 	}
 
-	.card1 img { /* Card1 Splash image */
+	.card1 img {
+		/* Card1 Splash image */
 		grid-area: image;
 		width: 100%;
 	}
 
-	.card1-maincontent { /*Wraps all of Card 1 content EXCEPT Splash image */
+	.card1-maincontent {
+		/*Wraps all of Card 1 content EXCEPT Splash image */
 		grid-area: content;
 		text-align: left;
 		align-self: flex-start;
@@ -647,11 +780,14 @@ address :last-child { /*Email only */
 	/*Card 2 */
 	.card2 {
 		margin-top: 16.5rem;
-		background-color: var(--lightGrayishBlue); /* The background fill works differently in the Desktop version because of poor planning on my part - plus I worked out a better way to do it than I used in the mobile version */
-		padding-bottom: 11.15rem; /* Background color bottom padding is handled here */
+		background-color: var(--lightGrayishBlue);
+		/* The background fill works differently in the Desktop version because of poor planning on my part - plus I worked out a better way to do it than I used in the mobile version */
+		padding-bottom: 11.15rem;
+		/* Background color bottom padding is handled here */
 	}
 
-	.card2 .bg-wave { /* Background wave image crowning Card background color */
+	.card2 .bg-wave {
+		/* Background wave image crowning Card background color */
 		width: 100%;
 		height: 11rem;
 		background-image: url(images/bg-curve-desktop.svg);
@@ -661,7 +797,8 @@ address :last-child { /*Email only */
 		background-color: white;
 	}
 
-	.bg-color { /* Wraps all card 2 content */
+	.bg-color {
+		/* Wraps all card 2 content */
 		display: grid;
 		grid-template-columns: 1.15fr 0.85fr;
 		grid-template-areas: "content image";
@@ -691,7 +828,8 @@ address :last-child { /*Email only */
 		font-size: 4.05rem;
 	}
 
-	.body1, .body2 {
+	.body1,
+	.body2 {
 		margin-left: 0;
 		margin-right: 20rem;
 		font-size: 1.6rem;
@@ -705,7 +843,8 @@ address :last-child { /*Email only */
 		margin-top: 7rem;
 	}
 
-	.card2 .linkwrapper { /* Wraps the "See How Fylo Works link and image */
+	.card2 .linkwrapper {
+		/* Wraps the "See How Fylo Works link and image */
 		justify-content: flex-start;
 		height: 4.2rem;
 	}
@@ -715,65 +854,74 @@ address :last-child { /*Email only */
 	}
 
 	.card2 .linkwrapper img {
-		bottom: -0.5rem;	
+		bottom: -0.5rem;
 	}
 
-	.card2 article { /* Wraps whole of testimonial section */
+	.card2 article {
+		/* Wraps whole of testimonial section */
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
 
-	.testimonialwrapper { /*Wraps all of actual testimoninal content */
+	.testimonialwrapper {
+		/*Wraps all of actual testimoninal content */
 		width: 35.5rem;
 		margin-top: 4.5rem;
 	}
 
-	.testimonialwrapper-img { /* Image is the double quotes at top */
+	.testimonialwrapper-img {
+		/* Image is the double quotes at top */
 		width: 1.6rem;
 		height: 1.8rem;
 		margin-left: 3.3rem;
 		margin-top: 0.5rem;
 	}
-	
+
 	.testimonialwrapper p {
 		font-size: 1.3rem;
 		margin-left: 3.3rem;
 		margin-right: 3.3rem;
 		margin-top: 0.8rem;
 		letter-spacing: 0.5px;
-		line-height: 1.75;	
+		line-height: 1.75;
 	}
-	
-	.referencewrapper { /*Wraps testimoninal author profile pic and name and job title */
+
+	.referencewrapper {
+		/*Wraps testimoninal author profile pic and name and job title */
 		height: 3.23rem;
 		margin-top: 1.4rem;
 		margin-left: 3.3rem;
 	}
-	
-	.referencewrapper ul { /* Testimonial author name and job title */
+
+	.referencewrapper ul {
+		/* Testimonial author name and job title */
 		height: 2.65rem;
 		justify-content: space-between;
 		margin-left: 0.78rem;
 	}
-	
-	.referencewrapper ul :first-child { /*Testominal author name */
+
+	.referencewrapper ul :first-child {
+		/*Testominal author name */
 		font-size: 1.2rem;
 	}
-	
-	.referencewrapper ul :last-child { /*Testimonial job title */
+
+	.referencewrapper ul :last-child {
+		/*Testimonial job title */
 		font-size: 0.87rem;
 		margin-bottom: 0;
 	}
 
 	/*Card 3 */
-	.card3 { /*Wraps all of card 3 */
+	.card3 {
+		/*Wraps all of card 3 */
 		display: grid;
 		grid-template-columns: 1.165fr 0.835fr;
 		grid-template-areas: "content form";
 		padding-bottom: 8.65rem;
 	}
-	
-	.card3-maincontent { /*Wraps card 3 actual content EXCLUDES Splash image */
+
+	.card3-maincontent {
+		/*Wraps card 3 actual content EXCLUDES Splash image */
 		grid-area: content;
 		margin-left: 8rem;
 		margin-top: 10.85rem;
@@ -786,7 +934,7 @@ address :last-child { /*Email only */
 		margin-right: 0;
 		text-align: left;
 	}
-	
+
 	.card3 p {
 		font-size: 1.71rem;
 		text-align: left;
@@ -795,7 +943,7 @@ address :last-child { /*Email only */
 		margin-top: 2.33rem;
 		line-height: 1.4;
 	}
-	
+
 	.card3 form {
 		grid-area: form;
 		align-self: flex-start;
@@ -803,7 +951,7 @@ address :last-child { /*Email only */
 		margin-top: 11.2rem;
 		margin-left: 0.2rem;
 	}
-	
+
 	.card3 input {
 		margin-top: 0;
 		height: 4.6rem;
@@ -814,23 +962,25 @@ address :last-child { /*Email only */
 		padding-left: 2rem;
 		font-size: 1.2rem;
 	}
-	
+
 	.card3 button {
 		margin-top: 1.6rem;
 		height: 4.8rem;
 		width: 20rem;
 		font-size: 1.4rem;
 	}
-	
+
 	/*Footer */
-	footer { /*Wraps whole footer section */
+	footer {
+		/*Wraps whole footer section */
 		font-size: 1.6rem;
 		flex-direction: row;
 		justify-content: flex-start;
 		padding-bottom: 7.6rem;
 	}
-	
-	.footerwrapper { /*Wraps all of actual footer content */
+
+	.footerwrapper {
+		/*Wraps all of actual footer content */
 		width: 100%;
 		margin-top: 10.75rem;
 		margin-left: 8rem;
@@ -838,48 +988,49 @@ address :last-child { /*Email only */
 		flex-direction: row;
 	}
 
-	.footeraddress { /*Wraps Fyloe logo and phone and email info */
+	.footeraddress {
+		/*Wraps Fyloe logo and phone and email info */
 		display: flex;
 		flex-direction: column;
 		align-content: flex-start;
-		width: 32.58%;		
+		width: 32.58%;
 	}
-	
-	.footerlogo { /*Fylo logo image */
+
+	.footerlogo {
+		/*Fylo logo image */
 		width: 17.5rem;
 	}
 
-	address { /* Wraps only Phone and Email info */
+	address {
+		/* Wraps only Phone and Email info */
 		justify-content: space-between;
 		align-content: flex-start;
 		margin-top: 2.6rem;
 		margin-left: 0.1rem;
 	}
-	
-	.navfooter { /* Wraps all Nav links */
+
+	.navfooter {
+		/* Wraps all Nav links */
 		width: 25.9%;
 		margin-top: 7.8rem;
 		flex-direction: row;
 		justify-content: space-between;
 		height: initial;
 	}
-	
-	.socials { /*Wraps all Socials icons */
+
+	.socials {
+		/*Wraps all Socials icons */
 		width: 22.2%;
 		align-self: flex-start;
 		justify-content: flex-end;
 		margin-top: 81px;
 	}
 
-	.fa-facebook-f {
-		margin-right: 16px;
+	.facebook-icon {
+		margin-right: 13px;
 	}
-	
-	.fa-twitter {
-		margin-right: 12px;
+
+	.twitter-icon {
+		margin-right: 11px;
 	}
 }
-
-
-
-
